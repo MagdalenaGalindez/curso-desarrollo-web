@@ -5,24 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Document</title>
 </head>
 
 <body>
-    <header class="row-tablet">
-        <a class="brand" href="index.html">Digital Fauna</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="html/services.html">Services</a></li>
-                <li><a href="html/about.html">About us</a></li>
-                <li><a href="html/solutions.html">Solutions</a></li>
-            </ul>
-        </nav>
-        <a class="button" href="html/contact.html">START A PROJECT</a>
-    </header>
-    <section class="hero">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Digital Fauna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/solutions.html">Solutions</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary ms-lg-auto" href="html/contact.html">START A PROJECT</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero mb-5">
         <div class="container">
             <h1>We are remarkable.</h1>
             <p>Digital Fauna is your partner for complex digital projects, powered by data analytics, market research, and digital technology.</p>
@@ -31,26 +44,44 @@
                 that need the strongest digital marketing partner paired with technical website development capabilities.</p>
         </div>
     </section>
-    <section class="services">
-        <div>
-            <h2>Build. Website development & design to build your brand.</h2>
-            <li>Website Development</li>
-            <li>Website Design</li>
-            <li>E-commerce Solutions</li>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Build. Website development & design to build your brand.</h5>
+                    <ul class="card-text">
+                        <li>Website Development</li>
+                        <li>Website Design</li>
+                        <li>E-commerce Solutions</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Grow. Online marketing to grow your business.</h2>
-            <li>Search Engine Optimization</li>
-            <li>Social Media Marketing</li>
-            <li>PPC and Adwords Management</li>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Grow. Online marketing to grow your business.</h5>
+                    <ul class="card-text">
+                        <li>Search Engine Optimization</li>
+                        <li>Social Media Marketing</li>
+                        <li>PPC and Adwords Management</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Protect. Hosting and security services to protect your website.</h2>
-            <li>Website / App Maintenance</li>
-            <li>Managed Hosting</li>
-            <li>ADA Compliance</li>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Protect. Hosting and security services to protect your website.</h5>
+                    <ul class="card-text">
+                        <li>Website / App Maintenance</li>
+                        <li>Managed Hosting</li>
+                        <li>ADA Compliance</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
     <section class="container">
         <h2>Who we are</h2>
         <p>We're a team of dedicated professionals based in Germany and Argentina, who genuinely care about your brand.</p>
@@ -88,6 +119,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
