@@ -1,0 +1,16 @@
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    div {
+        background: white;
+        border: solid rgb(234, 234, 243) 10px;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 460px) {
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
