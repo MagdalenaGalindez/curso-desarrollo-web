@@ -9,6 +9,14 @@
     }
 }
 
+.bg-blue {
+    @include fondo(lightblue);
+}
+
+.bg-red {
+    @include fondo(lightpink);
+}
+
 @media (min-width: 460px) {
     .services {
         grid-template-columns: 1fr 1fr;
