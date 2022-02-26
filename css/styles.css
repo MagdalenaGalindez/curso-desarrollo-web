@@ -30,6 +30,9 @@ section {
 .bg-green {
   background-color: #00cc9e; }
 
+.btn-primary {
+  background-color: blueviolet; }
+
 .card {
   border-top: 4px solid #008dd6;
   border-left: none;
