@@ -1,0 +1,13 @@
+.team {
+    .subtitle {
+        color: $blue;
+    }
+    ul li a {
+        color: $blue;
+        transition: .1s ease-in;
+        &:hover {
+            color: $blue;
+            transform: translate3d(0, -5px, 0);
+        }
+    }
+}
