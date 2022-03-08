@@ -4,9 +4,47 @@ $darkgrey: #2f363f;
 $lightgrey: rgb(238, 241, 243);
 @import "./variables/mixin";
 @import "./sections/services";
+@import "./sections/team";
 header {
     align-items: center;
     padding: .5em;
+}
+
+a {
+    &:visited {
+        color: $lightgrey;
+    }
+    &:active {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.fa-whatsapp-square {
+    background-color: black;
+    border-radius: 7px;
+    color: $green;
+    padding: 0 3px;
+    &:hover {
+        color: white;
+        background-color: $green;
+    }
+}
+
+.social-icon {
+    font-size: 3rem;
+}
+
+.floating-button {
+    bottom: 1rem;
+    position: fixed;
+    right: 1rem;
+    z-index: 1000;
 }
 
 section {
@@ -32,6 +70,16 @@ section {
     border-bottom: none;
     .card-title {
         color: $blue;
+    }
+}
+
+.vector-logo {
+    max-height: 5rem;
+}
+
+#carousel {
+    .carousel-inner {
+        height: 18rem;
     }
 }
 
@@ -62,19 +110,11 @@ section {
     }
 }
 
-.logo {
-    display: flex;
-    align-items: stretch;
-}
-
 footer {
-    align-items: bottom;
     background-color: $darkgrey;
     color: white;
-    padding: 1rem;
-    bottom: 0px;
     a {
-        color: rgb(255, 255, 255)
+        color: white
     }
 }
 
@@ -100,13 +140,13 @@ footer {
     }
 }
 
-label {
-    display: block;
-    margin-bottom: 1rem;
-}
-
 @media (min-width: 768px) {
     .row-tablet {
         flex-direction: row;
+    }
+    #carousel {
+        .carousel-inner {
+            height: 28rem;
+        }
     }
 }

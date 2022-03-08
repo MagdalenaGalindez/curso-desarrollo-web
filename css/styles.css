@@ -17,9 +17,48 @@
   .services {
     grid-template-columns: 1fr 1fr; } }
 
+.team .subtitle {
+  color: #008dd6; }
+
+.team ul li a {
+  color: #008dd6;
+  transition: .1s ease-in; }
+  .team ul li a:hover {
+    color: #008dd6;
+    transform: translate3d(0, -5px, 0); }
+
 header {
   align-items: center;
   padding: .5em; }
+
+a:visited {
+  color: #eef1f3; }
+
+a:active {
+  background-color: yellow;
+  color: black; }
+
+label {
+  display: block;
+  margin-bottom: 1rem; }
+
+.fa-whatsapp-square {
+  background-color: black;
+  border-radius: 7px;
+  color: #00cc9e;
+  padding: 0 3px; }
+  .fa-whatsapp-square:hover {
+    color: white;
+    background-color: #00cc9e; }
+
+.social-icon {
+  font-size: 3rem; }
+
+.floating-button {
+  bottom: 1rem;
+  position: fixed;
+  right: 1rem;
+  z-index: 1000; }
 
 section {
   background: #eef1f3; }
@@ -40,6 +79,12 @@ section {
   border-bottom: none; }
   .card .card-title {
     color: #008dd6; }
+
+.vector-logo {
+  max-height: 5rem; }
+
+#carousel .carousel-inner {
+  height: 18rem; }
 
 .row-tablet {
   display: flex;
@@ -62,16 +107,9 @@ section {
   100% {
     background-position: 0% 50%; } }
 
-.logo {
-  display: flex;
-  align-items: stretch; }
-
 footer {
-  align-items: bottom;
   background-color: #2f363f;
-  color: white;
-  padding: 1rem;
-  bottom: 0px; }
+  color: white; }
   footer a {
     color: white; }
 
@@ -94,10 +132,8 @@ footer {
     background-color: orange;
     color: black; }
 
-label {
-  display: block;
-  margin-bottom: 1rem; }
-
 @media (min-width: 768px) {
   .row-tablet {
-    flex-direction: row; } }
+    flex-direction: row; }
+  #carousel .carousel-inner {
+    height: 28rem; } }
